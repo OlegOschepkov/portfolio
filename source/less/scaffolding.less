@@ -1,0 +1,135 @@
+body {
+  .reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  margin: 0 25px;
+}
+
+.container__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container__recomendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__footer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.btn__header {
+  .font(17, 700, 24);
+  color: @darkblue;
+  box-sizing: border-box;
+  border: 2px solid @blue;
+  box-shadow: 0 0 3px 2px rgba(47, 80, 107, 0.4);
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  padding: 0 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: @blue;
+    transition: all 0ms ease;
+    z-index: -1;
+    border-radius: 20px;
+  }
+
+  &:hover {
+    color: white;
+    box-shadow: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: @blue;
+      transition: all 300ms ease;
+      z-index: -1;
+    }
+  }
+
+  &:active {
+    &::before {
+      box-shadow: inset 0 0 6px black;
+    }
+  }
+}
+
+.note {
+  .reset;
+  .font(10, 400, 16);
+  color: grey;
+}
+
+@media (min-width: @desktop) {
+  .note {
+    .font(12, 400, 18);
+    color: grey;
+  }
+
+  .container {
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+
+  .container__header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container__footer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  //
+  // .container__skills {
+  // }
+}

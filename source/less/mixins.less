@@ -1,0 +1,22 @@
+.reset {
+  padding: 0;
+  margin: 0;
+}
+
+.font (@size, @weight, @height) {
+  font-family: @font;
+  font-size: ~"@{size}px";
+  font-weight: @weight;
+  line-height: ~"@{height}px";
+}
+
+.square(@value) {
+  height: @value;
+  width: @value;
+}
+
+.border {
+  border-bottom: 5px solid transparent;
+  border-image: radial-gradient(ellipse at center, rgba(38, 108, 166, 1), rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+}

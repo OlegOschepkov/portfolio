@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Портфолио</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container__header">
+        <a class="header__logo">
+          <picture>
+            <!-- <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg"> <source media="(min-width: 768px)" srcset="img/logo.svg" height="75" width="150"> -->
+            <img src="../img/logo.png" alt="Логотип" height="60" width="235">
+          </picture>
+        </a>
+        <!-- <h2 class="header__title"></h2> -->
+        <nav class="header__nav header__nav--nojs header__nav--open">
+          <button class="header__toggle">
+            <span class="visually-hidden">Меню</span></button>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#aboutme" class="btn btn__header btn__header--about">Резюме</a>
+            </li>
+            <li class="header__item">
+              <a href="#skills" class="btn btn__header btn__header--skills">Навыки</a>
+            </li>
+            <li class="header__item">
+              <a href="#examples" class="btn btn__header btn__header--examples">Примеры работ</a>
+            </li>
+            <li class="header__item">
+              <a href="#recommendations" class="btn btn__header btn__header--recommendations">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="btn btn__header btn__header--contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="aboutme" id="aboutme">
+      <div class="container container__aboutme clearfix">
+        <h3 class="aboutme__title">Здравствуйте!</h3>
+        <img class="aboutme__photo" src="img/photo.jpg" alt="Мое фото" height="270" width="auto">
+        <p class="aboutme__introduce">
+          Меня зовут Олег, живу в Тольятти. Ищу работу junior frontend developer.<span class="visually-hidden">Последнее место работы - аутсорс-техник на
+          <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%87%D0%BD%D0%BE_%D0%B2_%D1%81%D1%80%D0%BE%D0%BA">JIT</a>
+          производстве, где администрировал рабочие станции, сервера, линию конвейера, и выполнял прочие обязанности в течении 6 лет.</span>
+          Профессию начал осваивать в 2017 году, первое время по книгам (серия
+          <a href="https://en.wikipedia.org/wiki/Head_First_(book_series)">Head First O`Reilly</a>), а в июле 2018-го закончил
+          <a href="https://htmlacademy.ru/profession/frontender">курсы «Фронтенд-разработчик»</a>. Выполненные при обучении проекты с их описанием можно увидеть в разделе
+          <a href="#examples">Примеры работ</a>.
+        </p>
+        <p class="aboutme__introduce">
+          Планы на ближайшие месяцы - уменьшить время на выполнение заданий, овладеть Bootstrap и Webpack. В более долгой перспективе - повысить качество кода, изучить React, ES6, расширить список используемых инструментов, возможно освоить jQuery, приобрести базовые
+          знания серверной части - для лучшего понимания. Есть цель к концу 2019 года стать нормальным мидлом. Для ее достижения смотрю записи выступлений, читаю документацию, пишу свою коллекцию скриптов и элементов, тренируюсь на получаемых по рассылке проектах.
+        </p>
+        <p class="aboutme__introduce">
+          Опыта реальной работы во фронтенде нет, поэтому рассматриваю разные предложения. Переезд возможен, но тут многое зависит от конкретной ситуации.
+        </p>
+        <p class="aboutme__introduce">
+          Иные навыки: английский - легко читаю документацию, могу смотреть фильмы без перевода. Хорошо владею компьютером (много лет работал в IT).
+        </p>
+        <p class="aboutme__introduce">
+          Если Вы заинтересовались или хотите помочь советом - <a href="#contacts">напишите мне,</a> буду благодарен! :)
+        </p>
+        <p class="aboutme__introduce"></p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container container__skills">
+        <h3 class="skills__title">Ключевые навыки:</h3>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <img src="img/html5-with-wordmark-color.svg" alt="HTML5 logo" height="200" width="auto" aria-label="HTML5 logo">
+            <p class="skills__description">Доступность, селекторы, семантика, формы, фразовые и потоковые элементы, кроссбраузерность</p>
+          </li>
+          <li class="skills__item">
+            <img src="img/css3-seeklogo.com.svg" alt="CSS3 logo" height="200" width="auto" aria-label="CSS3 logo">
+            <p class="skills__description">Сетки, поток документа, блочная модель документа, адаптивные резиновые и фиксированные сетки</p>
+          </li>
+          <li class="skills__item">
+            <img src="img/javascript-js-seeklogo.com.svg" alt="JavaScript logo" height="200" width="auto" aria-label="JavaScript logo">
+            <p class="skills__description">Циклы, массивы, объекты, DOM, обработка событий, модули, IIFE, работа с сетью, конструкторы.
+              <p class="note">P.S.
+                <a href="https://www.destroyallsoftware.com/talks/wat">WAT</a>
+                меня больше не смешит</p>
+            </p>
+          </li>
+          <li class="skills__item">
+            <img src="img/bem-seeklogo.com.svg" alt="БЭМ logo" height="200" width="auto" aria-label="БЭМ logo">
+            <p class="skills__description">БЭМ (т.н. "Малый"/CSS-/"БЭМ со стилями")</p>
+          </li>
+          <li class="skills__item">
+            <img src="img/less.svg" alt="LESS logo" height="auto" width="200" aria-label="LESS logo">
+            <img src="img/sass-seeklogo.com.svg" alt="Sass logo" height="115" width="фгещ" aria-label="Sass logo">
+            <p class="skills__description">Переменные, математические операции, операции с цветом, вложеность, примеси, расширения</p>
+          </li>
+          <li class="skills__item">
+            <img src="img/svg-seeklogo.com.svg" alt="SVG logo" height="200" width="auto" aria-label="SVG logo">
+            <p class="skills__description">SVG и прочие декоративные элементы: векторные спрайты, оптимизация</p>
+          </li>
+        </ul>
+        <ul class="skills__tools">
+          <li class="skills__item">
+            <img src="img/gulp.svg" alt="Gulp logo" height="200" width="auto" aria-label="Gulp logo">
+            <img src="img/grunt-seeklogo.com.svg" alt="Grunt logo" height="200" width="auto" aria-label="Grunt logo">
+            <p class="skills__description">Автоматизация, минификация, конвертация, сборка проектов</p>
+          </li>
+          <li class="skills__item skills__item--ps">
+            <img src="img/adobe-photoshop-cc-seeklogo.com.svg" alt="Photoshop logo" height="200" width="auto" aria-label="Photoshop logo">
+            <p class="skills__description">Необходимый минимум для разбора PSD макета</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="examples" id="examples">
+      <div class="container container__examples">
+        <h3 class="examples__title">Примеры работ</h3>
+        <ul class="examples__list">
+          <li class="examples__item">
+            <a href="https://olegoschepkov.github.io/509275-device/" class="examples__link"><img src="img/device.png" alt="Изображение главной страницы Device" class="examples__img" height="200" width="auto"></a>
+            <h4 class="examples__about">Учебный проект "Девайс", HTML + CSS</h4>
+            <p class="examples__details">Самый сложный проект среди предлагаемых на курсе "первый уровнь HTML&CSS". Сложная сетка, неочевидный порядок компонентов в разметке, применются градиенты и трансформации. В проекте две страницы - главная и каталог.
+              Слайдеры на главной реализованы на чистом CSS.</p>
+          </li>
+          <li class="examples__item">
+            <a href="https://olegoschepkov.github.io/mishka-publish/" class="examples__link"><img src="img/mishka.png" alt="Изображение главной страницы Mishka" class="examples__img" height="200" width="auto"></a>
+            <h4 class="examples__about">Учебный проект "Мишка"*, HTML + Less + Gulp. Позже заменил Gulp на Grunt</h4>
+            <p class="examples__details">Самый сложный проект среди предлагаемых на на курсе "второй уровнь HTML&CSS". Множество декоративных элементов, нестандартная сетка, сложные перестроения всех блоков, изменения размеров фотографий. 3 размера - мобильный,
+              планшетный, десктоп. 3 страницы - главная, страница с товарами и формой. Применяется адаптивная и ретиновая графика, спрайт.</p>
+            <p class="note">* Переход на собранную страницу. Оригинал кода
+              <a href="https://github.com/OlegOschepkov/509275-kekstagram">тут</a>
+            </p>
+          </li>
+          <li class="examples__item">
+            <a href="https://olegoschepkov.github.io/509275-kekstagram/" class="examples__link"><img src="img/kekstagram.png" alt="Изображение главной страницы Kekstagram" class="examples__img" height="200" width="auto"></a>
+            <h4 class="examples__about">Учебный проект "Кекстаграмм", JS</h4>
+            <p class="examples__details">Проект курса "JavaScript, 1 уровень". Проект позволяет загрузить свою фотографию, применить фильтр, изменить его насыщенность, размер фото, в полях хештега и кмментария осуществляется проверка на валидацию. Также можно
+              посмотреть фотографии других пользователей (комментарии и количество лайков храняться на сервере), есть функция сортировки. Для отрисовки фотографий применяется шаблон.</p>
+          </li>
+          <li class="examples__item">
+            <a href="https://olegoschepkov.github.io/509275-code-and-magick/" class="examples__link"><img src="img/codemagic.png" alt="Изображение главной страницы Код-и-магии" class="examples__img" height="200" width="auto"></a>
+            <h4 class="examples__about">Учебный проект "Код-и-магия", JS</h4>
+            <p class="examples__details">
+              Проект курса "JavaScript, 1 уровень". В этой игре вы можете передвигать персонажа, стрелять фаерболом, изменить имя, цвет глаз, плаща, фаербола. Также выводиться динамическая таблица результатов, и можно сравнить своего персонажа с другими (персонажи подгружаются с сервера).
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+      <div class="container container__recomendations">
+        <h3 class="recommendations__title">Отзывы</h3>
+        <!-- <img src="img/programmer-1653351_1280.png" alt="Пока пусто" width="auto" height="200"> -->
+        <ul class="recommendations__list">
+          <li class="recommendations__item">
+            <p class="recommendations__text">Пока что пусто :(</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container container__contacts">
+        <h3 class="contacts__title">Контакты:</h3>
+        <ul class="aboutme__contacts-list">
+          <li class="aboutme__contact">
+            <a href="skype:o_oleg_o" class="aboutme__link aboutme__link--skype" aria-label="Я в Skype"><img src="img/022-skype.svg" alt="Skype" height="50"></a>
+          </li>
+          <li class="aboutme__contact">
+            <a href="https://github.com/OlegOschepkov" class="aboutme__link aboutme__link--git" aria-label="Я на Git"><img src="img/039-github.svg" alt="Git" height="50"></a>
+          </li>
+          <li class="aboutme__contact">
+            <a href="https://vk.com/greatadonay" class="aboutme__link aboutme__link--vk" aria-label="Я в VK"><img src="img/009-vk.svg" alt="VK" height="50"></a>
+          </li>
+          <li class="aboutme__contact">
+            <a href="https://nexus.htmlacademy.ru/students/509275" class="aboutme__link aboutme__link--htmlacademy" aria-label="Мой профиль на HTML-Academy"><img src="img/htmlacademy.png" alt="Значок Skype" height="50"></a>
+          </li>
+          <li class="aboutme__contact">
+            <a href="mailto:adonayoleg@gmail.com" class="aboutme__link aboutme__link--mail" aria-label="Мой e-mail"><img src="img/gmail.svg" alt="Gmail" height="50"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container container__footer">
+        Check out the new logo that I created on
+        <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+        https://logomakr.com/7qIuBs
+        <div>Icons made by
+          <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+          is licensed by
+          <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script>
+      document.createElement("picture");
+    </script>
+
+  </body>
+</html>
